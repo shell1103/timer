@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>筋トレ用インターバルタイマー</title>
+  <link rel="stylesheet" href="Interval Timer.css">
+</head>
+<body>
+  <header>筋トレ用インターバルタイマー</header>
+
+  <div class="container">
+    <div class="inputs">
+      <label>ワーク時間（秒）: <input type="number" id="workTime" value="30"></label>
+      <label>休憩時間（秒）: <input type="number" id="restTime" value="15"></label>
+      <label>ラウンド数: <input type="number" id="rounds" value="5"></label>
+    </div>
+
+    <div class="timer-display">
+      <h2 id="phase">準備中</h2>
+      <p id="time">00:00</p>
+      <p id="currentRound">ラウンド: 0 / 0</p>
+    </div>
+
+    <button id="startButton">開始</button>
+  </div>
+
+  <script src="Interval Timer.js"></script>
+</body>
+</html>
